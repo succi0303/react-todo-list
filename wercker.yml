@@ -15,4 +15,4 @@ deploy:
     - pheres/git-push@0.4.10:
         gh_token: $GITHUB_TOKEN
         gh_pages: true
-        base_dir: build
+        basedir: build
