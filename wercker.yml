@@ -1,0 +1,17 @@
+box: node:latest
+build:
+  steps:
+    - script:
+        name: install create-react-app
+        code: |
+          npm install --global create-react-app
+    - script:
+        name: build app
+        code: |
+          npm run build
+deploy:
+  steps:
+    - pheres/git-push@0.4.10:
+        gh_token: $GITHUB_TOKEN
+        gh_pages: true
+        base_dir: build
