@@ -8,7 +8,7 @@ build:
     - script:
         name: build app
         code: |
-          npm run build
+          yarn build
 deploy:
   steps:
     - pheres/git-push@0.4.10:
