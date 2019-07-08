@@ -5,6 +5,7 @@ build:
         name: install create-react-app
         code: |
           npm install --global create-react-app
+    - npm-install
     - script:
         name: build app
         code: |
